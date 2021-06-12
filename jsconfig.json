@@ -2,5 +2,5 @@
   "compilerOptions": {
     "baseUrl": "."
   },
-  "include": ["pages", "components", "hooks", "contexts", "data", "constants", "workers"]
+  "include": ["pages", "workers"]
 }

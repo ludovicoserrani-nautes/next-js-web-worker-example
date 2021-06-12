@@ -1,6 +1,6 @@
 # WebWorker example
 
-This example shows how to run code in WebWorkers by utilizing webpack 4.
+This example shows how to run code in WebWorkers (with imports) by utilizing webpack 5.
 
 ## Deploy your own
 
