@@ -1,11 +1,12 @@
 import { useEffect, useRef, useCallback } from "react";
 
-import Worker from "workers/file.worker.js";
-
 export default function Index() {
   const workerRef = useRef();
   useEffect(() => {
-    workerRef.current = new Worker();
+    workerRef.current = new Worker(
+      new URL("./../workers/file.worker.js", import.meta.url),
+      { type: "module" }
+    );
     workerRef.current.onmessage = (evt) =>
       alert(`WebWorker Response => ${evt.data}`);
     return () => {
